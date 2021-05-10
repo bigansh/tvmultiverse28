@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<!-- Link -->
+		<%- include("partials/linkandscript") %>
+		<link rel="stylesheet" href="/blogs/css/viewblog.css" />
+		<!-- End Link -->
+
+		<!-- META -->
+		<%- include("partials/meta") %>
+		<meta property="og:image" content="<%= blog.image %>" />
+		<meta property="og:title" content="<%= blog.title %>" />
+		<meta property="og:description" content="by MULTIVERSE TV" />
+		<!-- End META -->
+
+		<title><%= blog.title %> by MULTIVERSE TV</title>
+	</head>
+	<body>
+		<!-- Navbar -->
+		<%- include("partials/navbar") %>
+		<!-- End Navbar -->
+
+		<div class="container my-5" style="text-align: -webkit-center">
+			<table style="border-radius: 5px">
+				<tr style="width: 100%">
+					<td>
+						<div class="black-card">
+							<h1 class="card-title mb-2" style="font-family: montserrat">
+								<%= blog.title %>
+							</h1>
+							<div
+								class="card mb-3 h-100 text-white"
+								style="background: #1f1f1f"
+							>
+								<img
+									class="card-img-top"
+									src="<%= blog.image %>"
+									alt="Card image cap"
+								/>
+								<div class="card-body">
+									<p class="card-text" style="font-size: 20px">
+										<small class="text-muted"
+											><strong>Published on:</strong> <%=
+											blog.created.toDateString() %></small
+										>
+									</p>
+									<p class="card-text" style="line-height: 1.2">
+										<%- blog.body %>
+									</p>
+								</div>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+	<%- include("partials/footerscript") %>
+</html>

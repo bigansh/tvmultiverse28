@@ -1,0 +1,12 @@
+body {
+	background-color: #292929;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+}
+.black-card {
+	background: #121212;
+	border-radius: 5px;
+	padding: 2rem;
+	padding-bottom: 1em;
+	padding-top: 1.2em;
+}
