@@ -1,0 +1,170 @@
+<html>
+	<head>
+		<!-- Link -->
+		<%- include("partials/linkandscript") %>
+		<link rel="stylesheet" href="/blogs/css/blogs.css" />
+		<!-- End Link -->
+
+		<!-- META -->
+		<%- include("partials/meta") %>
+		<meta
+			property="og:image"
+			content="https://i.postimg.cc/0yNRJwLx/Blog-Graph-Image-V2-png.jpg"
+		/>
+		<meta property="og:title" content="Blog by MULTIVERSE TV" />
+		<!-- End META -->
+
+		<title>Blog by MULTIVERSE TV</title>
+	</head>
+	<body
+		style="
+			background-color: #292929;
+			font-family: 'Montserrat', sans-serif;
+			color: white;
+		"
+	>
+		<!-- Navbar -->
+		<%- include("partials/navbar") %>
+		<!-- End Navbar -->
+
+		<div class="container my-5">
+			<table style="border-radius: 5px">
+				<tr style="width: 100%">
+					<td>
+						<div class="jumbotron mb-0 py-4" style="background-color: #121212">
+							<h1 class="display-5">Hello people!</h1>
+							<p class="lead mb-0" style="line-height: 1.5">
+								Welcome to our
+								<span style="color: #aed55f"
+									><strong>Multiverse Blog</strong></span
+								>. We publish awesome content related to technology, business,
+								and science with educational yet entertaining viewpoint. Make
+								sure to follow us on
+								<span>
+									<strong>
+										<a
+											target="_blank"
+											rel="noopener noreferrer"
+											href="https://thelink.bio/tvmultiverse28"
+											style="color: #1c94bd"
+										>
+											<u>Social Media</u>
+										</a>
+									</strong>
+								</span>
+								so you don't miss out on any of our content.
+							</p>
+						</div>
+					</td>
+				</tr>
+				<tr style="width: 100%">
+					<td>
+						<div class="mt-4">
+							<h3>Categories</h3>
+						</div>
+					</td>
+				</tr>
+				<tr style="width: 100%">
+					<td>
+						<div
+							style="
+								background: #121212;
+								border-radius: 5px;
+								padding: 2rem;
+								padding-bottom: 0.15em;
+							"
+							class="mt-1"
+						>
+							<div class="row">
+								<div
+									class="col-lg-4 portfolio-item"
+									style="margin-bottom: 1.7em"
+								>
+									<div
+										class="card h-100 text-white"
+										style="background: #1f1f1f"
+									>
+										<a href="/blogs/science">
+											<img
+												class="card-img-top embed-responsive-item"
+												src="https://image.freepik.com/free-vector/science-research-illustration_159144-89.jpg"
+												alt=""
+											/>
+										</a>
+										<div class="card-body d-flex flex-column">
+											<h4 class="card-title">
+												<a href="/blogs/science" style="color: white">
+													Science
+												</a>
+											</h4>
+											<a href="/blogs/science" class="btn btn-success mt-auto"
+												>Blogs</a
+											>
+										</div>
+									</div>
+								</div>
+								<div
+									class="col-lg-4 portfolio-item"
+									style="margin-bottom: 1.7em"
+								>
+									<div
+										class="card h-100 text-white"
+										style="background: #1f1f1f"
+									>
+										<a href="/blogs/technology">
+											<img
+												class="card-img-top embed-responsive-item"
+												src="https://i.pinimg.com/736x/21/39/d7/2139d7dab403a5c8926fb2122c360daf.jpg"
+												alt=""
+											/>
+										</a>
+										<div class="card-body d-flex flex-column">
+											<h4 class="card-title">
+												<a href="/blogs/technology" style="color: white">
+													Technology
+												</a>
+											</h4>
+											<a
+												href="/blogs/technology"
+												class="btn btn-success mt-auto"
+												>Blogs</a
+											>
+										</div>
+									</div>
+								</div>
+								<div
+									class="col-lg-4 portfolio-item"
+									style="margin-bottom: 1.7em"
+								>
+									<div
+										class="card h-100 text-white"
+										style="background: #1f1f1f"
+									>
+										<a href="/blogs/business">
+											<img
+												class="card-img-top embed-responsive-item"
+												src="https://image.freepik.com/free-vector/creative-business-strategy-idea-illustration-concept_1344-194.jpg"
+												alt=""
+											/>
+										</a>
+										<div class="card-body d-flex flex-column">
+											<h4 class="card-title">
+												<a href="/blogs/business" style="color: white">
+													Business
+												</a>
+											</h4>
+											<a href="/blogs/business" class="btn btn-success mt-auto"
+												>Blogs</a
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+	<%- include("partials/footerscript") %>
+</html>

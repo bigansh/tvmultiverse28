@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- META -->
+		<%- include("partials/meta") %>
+		<meta
+			property="og:image"
+			content="https://i.postimg.cc/kMj6kxNF/Banner-TV.jpg"
+		/>
+		<meta property="og:title" content="MULTIVERSE TV" />
+		<!-- End META -->
+
+		<!-- Link -->
+		<%- include("partials/linkandscript") %>
+		<!-- End Link -->
+	</head>
+
+	<body
+		style="
+			background-color: #292929;
+			font-family: 'Montserrat', sans-serif;
+			color: white;
+		"
+	>
+		<!-- Navbar -->
+		<%- include("partials/navbar") %>
+		<!-- End Navbar -->
+
+		<base href="" />
+		<div class="container my-5">
+			<table style="border-radius: 5px">
+				<tr style="width: 100%">
+					<td>
+						<div class="jumbotron mb-0 py-4" style="background-color: #121212">
+							<h1 class="display-5">Hello people!</h1>
+							<p class="lead mb-0">
+								Welcome to our
+								<span style="color: #aed55f"><strong>Multiverse</strong></span
+								>. We are a technology, science, business, and vlogs
+								<span style="color: #c4302b"><strong>YouTube</strong></span>
+								channel with an educational yet entertaining focus. Make sure to
+								<span
+									><strong
+										><a
+											target="_blank"
+											rel="noopener noreferrer"
+											href="https://www.youtube.com/tvmultiverse28?sub_confirmation=1"
+											style="color: #c4302b"
+											><u>SUBSCRIBE</u></a
+										></strong
+									></span
+								>
+								to our channel so you don't miss out on any of our content.
+							</p>
+						</div>
+					</td>
+				</tr>
+				<tr style="width: 100%">
+					<td>
+						<div class="mt-4">
+							<h3>Videos</h3>
+						</div>
+					</td>
+				</tr>
+				<tr style="width: 100%">
+					<td>
+						<div
+							style="
+								background: #121212;
+								border-radius: 5px;
+								padding: 2rem;
+								padding-bottom: 10px;
+							"
+							class="mt-1"
+						>
+							<script
+								src="https://assets.juicer.io/embed.js"
+								type="text/javascript"
+							></script>
+							<link
+								href="https://assets.juicer.io/embed.css"
+								media="all"
+								rel="stylesheet"
+								type="text/css"
+							/>
+							<style>
+								.juicer-feed.night
+									li.feed-item.j-youtube
+									.j-poster-meta
+									.j-youtube {
+									color: #ff0000;
+									background-color: transparent;
+								}
+							</style>
+							<ul
+								class="juicer-feed"
+								data-feed-id="uclnv7psf08pwk52yqexmjcg-7f070cbf-6439-4e3a-9606-e24a1d40aa33"
+							></ul>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<script src="/videos/scripts/videos.js"></script>
+	</body>
+	<%- include("partials/footerscript") %>
+</html>
