@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /blogs/new
+
+Sitemap: https://tvmultiverse28.herokuapp.com/sitemap.xml
