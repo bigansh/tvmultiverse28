@@ -7,14 +7,11 @@
 
 		<!-- META -->
 		<%- include("partials/meta") %>
-		<meta
-			property="og:image"
-			content="https://i.postimg.cc/0yNRJwLx/Blog-Graph-Image-V2-png.jpg"
-		/>
-		<meta property="og:title" content="Edit Blog" />
+		<meta property="og:image" content="<%= blog.image %>" />
+		<meta property="og:title" content="<%= blog.title %>" />
 		<!-- End META -->
 
-		<title>New Blog by MULTIVERSE TV</title>
+		<title><%= blog.title %> MULTIVERSE TV</title>
 	</head>
 	<body>
 		<!-- Navbar -->
@@ -22,7 +19,7 @@
 		<!-- End Navbar -->
 
 		<div class="container my-5 black-card">
-			<h1 style="font-family: montserrat; margin-bottom: 20px">New Blog</h1>
+			<h1 style="font-family: montserrat; margin-bottom: 20px">Edit Blog</h1>
 			<form
 				action="/blogs/<%= category %>/<%= blog._id %>?_method=PUT"
 				style="margin-bottom: 0"
