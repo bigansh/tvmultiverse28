@@ -31,7 +31,7 @@ app.get('sitemap.xml', (req, res) => {
 })
 
 app.get('robots.txt', (req, res) => {
-	res.sendFile('robots.txt', { root: __dirname})
+	res.sendFile('robots.txt', { root: __dirname })
 })
 
 app.listen(process.env.PORT, () => {
