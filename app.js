@@ -34,6 +34,6 @@ app.get('robots.txt', (req, res) => {
 	res.sendFile('robots.txt', { root: __dirname })
 })
 
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 3000, () => {
 	console.log('Connected')
 })

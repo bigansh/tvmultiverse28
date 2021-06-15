@@ -1,6 +1,22 @@
-version: 1.0
-services: 
-    web:
-        build: .
-        ports:
-            - "9000":"3000"
+version: '3.0'
+services:
+  app:
+    container_name: tvmultiverse28
+    build: .
+    ports:
+      - '9000:3000'
+    env_file: .env
+    links:
+      - mongo
+    networks:
+      - app-network
+  mongo:
+    container_name: mongo
+    image: mongo
+    ports:
+      - '27017:27017'
+networks:
+  app-network:
+    driver: bridge
+volumes:
+  dbdata:
