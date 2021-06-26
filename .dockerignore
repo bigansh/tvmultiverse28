@@ -1,0 +1,6 @@
+#Folders
+.git
+/node_modules
+
+#Files
+.env
