@@ -4,7 +4,7 @@ const mongoose = require('mongoose'),
 dotenv.config()
 
 const connect = mongoose
-	.connect('mongodb://mongo:27017/blogmtv', {
+	.connect(process.env.DATABASEURL, {
 		useUnifiedTopology: true,
 		useNewUrlParser: true,
 		useCreateIndex: true,
