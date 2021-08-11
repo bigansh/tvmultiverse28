@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /blogs/new
 
-Sitemap: https://tvmultiverse28.herokuapp.com/sitemap.xml
+Sitemap: https://multiversetv.ml/sitemap.xml
