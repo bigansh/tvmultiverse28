@@ -11,6 +11,7 @@ app.use(express.static('public', { redirect: false }))
 app.use(expressSanitizer())
 app.use(methodOverride('_method'))
 
+const slashes = require('connect-slashes')
 const mongoConnect = require('./connections/mongoConnect')
 const blogRoute = require('./router/blogs')
 
@@ -20,7 +21,7 @@ app.get('/', (req, res) => {
 	res.render('index')
 })
 
-app.get('/videos', (req, res) => {
+app.get('/videos', slashes(false), (req, res) => {
 	res.render('videos')
 })
 
