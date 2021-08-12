@@ -1,9 +1,10 @@
 const express = require('express'),
-	router = express.Router()
+	router = express.Router(),
+	slashes = require('connect-slashes')
 
 const Blog = require('../models/blogSchema')
 
-router.get('/', (req, res) => {
+router.get('/', slashes(), (req, res) => {
 	res.render('blogs')
 })
 
@@ -19,7 +20,7 @@ router.post('/', (req, res) => {
 	})
 })
 
-router.get('/:category', (req, res) => {
+router.get('/:category', slashes(), (req, res) => {
 	if (req.params.category === 'science') {
 		Blog.find({ tag: 'Science' })
 			.sort([['created', -1]])
