@@ -68,7 +68,7 @@ router.get('/:category', slashes(), (req, res) => {
 	}
 })
 
-router.get('/:category/:id', (req, res) => {
+router.get('/:category/:id', slashes(false), (req, res) => {
 	Blog.findById(req.params.id, function (err, foundBlog) {
 		if (err) {
 			res.redirect('/blogs')
